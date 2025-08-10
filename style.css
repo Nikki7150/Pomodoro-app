@@ -1,0 +1,158 @@
+html {
+  font-family: 'Press Start 2P', cursive; 
+  font-size: 20px;
+  letter-spacing: 0.8px;
+  min-height: 100vh;
+  color: #d8e9ef;
+  background-image: url('focus.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+h1 {
+  color: rgb(84, 73, 73);
+  margin: 0px auto 40px auto;
+}
+
+p {
+  color: rgb(84, 73, 73);
+  margin: 0;
+}
+
+.app-message {
+  color: rgb(84, 73, 73);
+  height: 20px;
+  margin: 10px auto 20px auto;
+}
+
+.app-container {
+  color: rgb(84, 73, 73);
+  background: rgb(231, 227, 227, 0.5);
+  border: 2px solid #dcdee7;
+  border-radius: 15px;
+  width: 400px;
+  height: 420px;
+  margin: 40px auto;
+  text-align: center;
+  padding: 20px;
+}
+
+.app-circle {
+  position: relative;
+  margin: 40px auto 0 auto;
+  width: 200px;
+  height: 200px;
+}
+
+.circle-shape {
+  pointer-events: none;
+}
+
+.semi-circle {
+  position: absolute;
+  width: 100px;
+  height: 200px;
+  box-sizing: border-box;
+  border: solid 6px;
+}
+
+.left-side {
+  top: 0;
+  left: 0;
+  transform-origin: right center;
+  transform: rotate(0deg);
+  border-top-left-radius: 100px;
+  border-bottom-left-radius: 100px;
+  border-right: none;
+  z-index: 1;
+}
+
+ .right-side {
+  top: 0;
+  left: 100px;
+  transform-origin: left center;
+  transform: rotate(0deg);
+  border-top-right-radius: 100px;
+  border-bottom-right-radius: 100px;
+  border-left: none;
+}
+
+.circle {
+  border-color: #ffffff;
+}
+
+.circle-mask {
+  border-color: #ffffff;
+}
+
+.app-counter-box {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 250%;
+  position: relative;
+  top: 50px;
+  color: #d8e9ef;
+}
+
+button {
+  position: relative;
+  top: 50px;
+  font-size: 100%;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: none;
+  background: none;
+  outline: none;
+  color: rgb(84, 73, 73);
+  font-family: 'Share Tech Mono', monospace;
+}
+
+button:hover {
+  text-decoration: wavy;
+}
+
+.quote-container {
+  color: rgb(84, 73, 73);
+  background: rgb(231, 227, 227, 0.5);
+  border: 2px solid #dcdee7;
+  border-radius: 15px;
+  width: 400px;
+  height: 220px;
+  margin: 40px auto;
+  text-align: center;
+  padding: 20px;
+  h2 {
+    font-size: 26px;
+    margin-left: -150px;
+  }
+  #reset {
+    margin: 0 auto;
+    margin-top: -35px;
+    padding-bottom: 2px;
+    float: right;
+    cursor: pointer;
+    background: rgb(231, 227, 227, 0.5);
+    border: 1px solid #dcdee7;
+  }
+  .quote {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 24px;
+    margin: 0 auto;
+    padding: 10px;
+    width: 300px;
+    text-align: center;
+  }
+}
+
+.todolist-container {
+  color: rgb(84, 73, 73);
+  background: rgb(231, 227, 227, 0.5);
+  border: 2px solid #dcdee7;
+  border-radius: 15px;
+  width: 400px;
+  height: 220px;
+  margin: 40px auto;
+  text-align: center;
+  padding: 20px;
+}
