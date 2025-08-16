@@ -4,16 +4,14 @@ html {
   letter-spacing: 0.8px;
   min-height: 100vh;
   color: #d8e9ef;
-  background-image: url('focus.png');
-  background-size: cover;
+  background-image: url('break (1).png');
   background-repeat: no-repeat;
-  background-position: center center;
-  background-attachment: fixed;
 }
 
 h1 {
-  color: rgb(84, 73, 73);
+  color: rgb(84, 71, 71);
   margin: 0px auto 40px auto;
+  margin-bottom: 25px;
 }
 
 p {
@@ -24,10 +22,10 @@ p {
 .app-message {
   color: rgb(84, 73, 73);
   height: 20px;
-  margin: 10px auto 20px auto;
+  margin: 10px auto -10px auto;
 }
 
-.app-container {
+.timer-container {
   color: rgb(84, 73, 73);
   background: rgb(231, 227, 227, 0.5);
   border: 2px solid #dcdee7;
@@ -110,56 +108,11 @@ button {
 
 button:hover {
   cursor: pointer;
-  text-decoration: wavy;
+  text-decoration: wavy underline;
 }
 
-.quote-container {
-  color: rgb(84, 73, 73);
-  background: rgb(231, 227, 227, 0.5);
-  border: 2px solid #dcdee7;
-  border-radius: 15px;
-  width: 400px;
-  height: 220px;
-  margin: 40px auto;
-  text-align: center;
-  padding: 20px;
-  h2 {
-    font-size: 26px;
-    margin-left: -150px;
-  }
-  #reset {
-    margin: 0 auto;
-    margin-top: -35px;
-    padding-bottom: 2px;
-    float: right;
-    cursor: pointer;
-    background: rgb(231, 227, 227, 0.5);
-    border: 1px solid #dcdee7;
-  }
-  .quote {
-    font-family: 'Share Tech Mono', monospace;
-    font-size: 24px;
-    margin: 0 auto;
-    padding: 10px;
-    width: 300px;
-    text-align: center;
-  }
-}
 
-.todolist-container {
-  color: rgb(84, 73, 73);
-  background: rgb(231, 227, 227, 0.5);
-  border: 2px solid #dcdee7;
-  border-radius: 15px;
-  width: 400px;
-  height: 220px;
-  margin: 40px auto;
-  text-align: center;
-  padding: 20px;
-}
-
-#break-container {
-  display: none;
+#focus-container {
   color: rgb(84, 73, 73);
   background: rgb(231, 227, 227, 0.5);
   border: 2px solid #dcdee7;
@@ -167,6 +120,8 @@ button:hover {
   width: 400px;
   height: 170px;
   margin: 40px auto;
+  margin-top: -50px;
+  margin-bottom: 0px;
   text-align: center;
   padding: 20px;
   hr {
@@ -175,7 +130,7 @@ button:hover {
   h2 {
     font-size: 26px;
     }
-  #yes-btn {
+  #yes-focus {
     margin: 0 auto;
     margin-top: -35px;
     margin-left: 70px;
@@ -184,8 +139,12 @@ button:hover {
     cursor: pointer;
     background: rgb(231, 227, 227, 0.5);
     border: 1px solid #dcdee7;
+    text-decoration: none;
+    &:hover {
+      background: rgba(166, 163, 163, 0.5);
+    }
   }
-  #no-btn {
+  #no-focus {
     margin: 0 auto;
     margin-top: -35px;
     margin-right: 50px;
@@ -194,5 +153,9 @@ button:hover {
     cursor: pointer;
     background: rgb(231, 227, 227, 0.5);
     border: 1px solid #dcdee7;
+    text-decoration: none;
+    &:hover {
+      background: rgba(166, 163, 163, 0.5);
+    }
   }
 }

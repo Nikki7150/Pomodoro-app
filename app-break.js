@@ -42,23 +42,25 @@ const appTimer = () => {
     bells.play();
     isRunning = false;
 
-    // Show break container
-    const breakContainer = document.getElementById('break-container');
-    breakContainer.innerHTML = `
+    // Show focus container
+    const focusContainer = document.getElementById('focus-container');
+    focusContainer.innerHTML = `
       <h2>Time's Up!</h2>
-      <h3>Take a break?</h3>
+      <h3>Take a focus?</h3>
       <hr />
-      <button id="yes-break">Yes</button>
-      <button id="no-break">No</button>
+      <button id="yes-focus">Yes</button>
+      <button id="no-focus">No</button>
     `;
-    breakContainer.style.display = 'block';
+    focusContainer.style.color = 'rgb(84, 73, 73)';
+    focusContainer.style.background = 'rgb(231, 227, 227, 0.5)';
+    focusContainer.style.border = '2px solid #dcdee7';
 
     // Click handlers
-    document.getElementById('yes-break').addEventListener('click', () => {
-      window.location.href = 'break.html'; // link to your break page
+    document.getElementById('yes-focus').addEventListener('click', () => {
+      window.location.href = 'index.html'; // link to your focus page
     });
-    document.getElementById('no-break').addEventListener('click', () => {
-      breakContainer.style.display = 'none';
+    document.getElementById('no-focus').addEventListener('click', () => {
+      focusContainer.style.display = 'none';
       minuteDiv.textContent = '1';
       secondDiv.textContent = '00';
       totalSeconds = undefined; // reset for next start
