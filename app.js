@@ -91,3 +91,28 @@ resetBtn.addEventListener('click', () => {
   }
 });
 
+var quoteList = [
+  '"Taking a break can lead to break throughs." - Russell Dobda', 
+  '"You don\'t have to see the whole staircase. You just have to take the first step." - Martin Luther King Jr.', 
+  '"The most effective way to do it, is to do it." - Amelia Earhart', 
+  '"Be so good they can\'t ignore you." - Steve Martin', 
+  '"The secret of making progress is to get started." - Mark Twain', 
+  '"Success is not the key to happiness. Happiness is the key to success." - Albert Schweitzer', 
+  '"The only way to do great work is to love what you do." - Steve Jobs'
+];
+
+var quote = document.getElementById('quote-text');
+var count = 0;
+var reset = document.getElementById('reset');
+
+if (reset) {
+  reset.addEventListener('click', displayquote);
+}
+
+  function displayquote () {
+    quote.innerHTML = quoteList[count];
+    count++;
+    if (count == quoteList.length) {
+      count = 0;
+    }
+  }

@@ -111,7 +111,6 @@ button:hover {
   text-decoration: wavy underline;
 }
 
-
 #focus-container {
   color: rgb(84, 73, 73);
   background: rgb(231, 227, 227, 0.5);
@@ -124,6 +123,7 @@ button:hover {
   margin-bottom: 0px;
   text-align: center;
   padding: 20px;
+  opacity: 0;
   hr {
     margin: 0;
   }
@@ -157,5 +157,9 @@ button:hover {
     &:hover {
       background: rgba(166, 163, 163, 0.5);
     }
+  }
+  a {
+    text-decoration: none;
+    color:rgb(84, 73, 73);
   }
 }

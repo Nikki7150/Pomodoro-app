@@ -46,25 +46,13 @@ const appTimer = () => {
     const focusContainer = document.getElementById('focus-container');
     focusContainer.innerHTML = `
       <h2>Time's Up!</h2>
-      <h3>Take a focus?</h3>
+      <h3>Ready to Go Back to Focus?</h3>
       <hr />
-      <button id="yes-focus">Yes</button>
-      <button id="no-focus">No</button>
+      <button id="yes-focus"><a href="index.html">Yes!</a></button>
+      <button id="no-focus"><a href="break.html">No, thanks.</a></button>
     `;
-    focusContainer.style.color = 'rgb(84, 73, 73)';
-    focusContainer.style.background = 'rgb(231, 227, 227, 0.5)';
-    focusContainer.style.border = '2px solid #dcdee7';
-
-    // Click handlers
-    document.getElementById('yes-focus').addEventListener('click', () => {
-      window.location.href = 'index.html'; // link to your focus page
-    });
-    document.getElementById('no-focus').addEventListener('click', () => {
-      focusContainer.style.display = 'none';
-      minuteDiv.textContent = '1';
-      secondDiv.textContent = '00';
-      totalSeconds = undefined; // reset for next start
-    });
+    focusContainer.style.opacity = "1";
+    focusContainer.querySelector(".inner-content").style.opacity = "1";
 
     return;
   }
