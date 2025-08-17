@@ -55,13 +55,13 @@ const appTimer = () => {
 
     // Click handlers
     document.getElementById('yes-break').addEventListener('click', () => {
-      window.location.href = 'break.html'; // link to your break page
+      window.location.href = 'break.html';
     });
     document.getElementById('no-break').addEventListener('click', () => {
       breakContainer.style.display = 'none';
       minuteDiv.textContent = '1';
       secondDiv.textContent = '00';
-      totalSeconds = undefined; // reset for next start
+      totalSeconds = undefined;
     });
 
     return;
