@@ -42,7 +42,7 @@ const appTimer = () => {
     bells.play();
     isRunning = false;
 
-    // Show break container
+    /*// Show break container
     const breakContainer = document.getElementById('break-container');
     breakContainer.innerHTML = `
       <h2>Time's Up!</h2>
@@ -59,6 +59,19 @@ const appTimer = () => {
     });
     document.getElementById('no-break').addEventListener('click', () => {
       breakContainer.style.display = 'none';
+      minuteDiv.textContent = '1';
+      secondDiv.textContent = '00';
+      totalSeconds = undefined; // reset for next start
+    });*/
+
+    const popup =  document.getElementById('popup');
+    popup.classList.add('active'); 
+
+    document.getElementById('yes-btn').addEventListener('click', () => {
+      window.location.href = 'break.html'; // link to break page
+    });
+    document.getElementById('no-btn').addEventListener('click', () => {
+      popup.classList.remove('active');
       minuteDiv.textContent = '1';
       secondDiv.textContent = '00';
       totalSeconds = undefined; // reset for next start
