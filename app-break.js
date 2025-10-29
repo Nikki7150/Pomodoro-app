@@ -1,4 +1,4 @@
-const bells = new Audio('end-bell.wav'); 
+﻿const bells = new Audio('end-bell.wav'); 
 const beep = document.getElementById('beep-sound');
 const startBtn = document.querySelector('.btn-start'); 
 const pauseBtn = document.querySelector('.btn-pause');
@@ -47,7 +47,7 @@ const appTimer = () => {
     popup.classList.add('active'); 
 
     document.getElementById('yes-btn').addEventListener('click', () => {
-      window.location.href = 'index.html'; // link to focus page
+      window.location.href = 'index.html'; // link to break page
     });
     document.getElementById('no-btn').addEventListener('click', () => {
       popup.classList.remove('active');
