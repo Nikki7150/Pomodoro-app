@@ -51,7 +51,7 @@ const appTimer = () => {
     });
     document.getElementById('no-btn').addEventListener('click', () => {
       popup.classList.remove('active');
-      minuteDiv.textContent = '1';
+      minuteDiv.textContent = '25';
       secondDiv.textContent = '00';
       totalSeconds = undefined; // reset for next start
     });
@@ -77,7 +77,7 @@ resetBtn.addEventListener('click', () => {
   if(confirm("Are you sure you want to reset the timer?")) {
     clearInterval(myInterval);
     isRunning = false;
-    minuteDiv.textContent = '1';
+    minuteDiv.textContent = '25';
     secondDiv.textContent = '00';
     totalSeconds = undefined;
   }
