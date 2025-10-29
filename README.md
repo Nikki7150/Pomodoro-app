@@ -1,5 +1,7 @@
 # Personal Pomodoro
 
+[![Athena Award Badge](https://img.shields.io/endpoint?url=https%3A%2F%2Faward.athena.hackclub.com%2Fapi%2Fbadge)](https://award.athena.hackclub.com?utm_source=readme)
+
 ## Description
 This is an online personal pomodoro timer with an inbuilt quote generator and a todo list for your top three tasks so you can keep trakc of what you get done during the pomodoro timer. I made the actual pomodoro timer part of the code using a tutorial by Codedex and then added the additional stuff on my own. I also followed a tutorial by Codedex for the Todo list to m make a seperate todo list website and I linked it in this project so the user can use that side by side. It was a really fun project to make and I hope you liked it too!
 
