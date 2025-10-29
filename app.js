@@ -3,8 +3,8 @@ const beep = document.getElementById('beep-sound');
 const startBtn = document.querySelector('.btn-start'); 
 const pauseBtn = document.querySelector('.btn-pause');
 const resetBtn = document.querySelector('.btn-reset');
-const minuteDiv = document.querySelector('.minutes');///
-const secondDiv = document.querySelector('.seconds');///
+const minuteDiv = document.querySelector('.minutes');
+const secondDiv = document.querySelector('.seconds');
 
 let myInterval; 
 let totalSeconds; 
@@ -42,28 +42,7 @@ const appTimer = () => {
     bells.play();
     isRunning = false;
 
-    /*// Show break container
-    const breakContainer = document.getElementById('break-container');
-    breakContainer.innerHTML = `
-      <h2>Time's Up!</h2>
-      <h3>Take a break?</h3>
-      <hr />
-      <button id="yes-break">Yes</button>
-      <button id="no-break">No</button>
-    `;
-    breakContainer.style.display = 'block';
-
-    // Click handlers
-    document.getElementById('yes-break').addEventListener('click', () => {
-      window.location.href = 'break.html'; // link to your break page
-    });
-    document.getElementById('no-break').addEventListener('click', () => {
-      breakContainer.style.display = 'none';
-      minuteDiv.textContent = '1';
-      secondDiv.textContent = '00';
-      totalSeconds = undefined; // reset for next start
-    });*/
-
+    // show popup to take a break
     const popup =  document.getElementById('popup');
     popup.classList.add('active'); 
 

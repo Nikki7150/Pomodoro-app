@@ -13,9 +13,11 @@
         <title>Pomodoro App</title>
     </head>
     <body>
-        <div class="app-container">
-            <h1>Pomodoro</h1>
-            <div class="app-message">press start to begin</div>
+        <a href="index.html" class="h1">Pomodoro</a>
+        <div class="containers-wrapper">
+            <div class="app-container">
+                
+                <div class="app-message">press start to begin</div>
             <div class="app-circle">
                 <div class="circle-shape">
                     <div class="semi-circle right-side circle-mask"></div>
@@ -33,34 +35,29 @@
                 <button class="btn-reset">reset</button>
             </div>
         </div>
+        
+        <div class="right-side-container">
+            <div class="quote-container">
+                <button id="reset">🗘</button>
+                <h2>Quote OTD</h2>
+                
+                <hr />
+                <div class="quote">
+                    <p id="quote-text">"The only way to do great work is to love what you do." - Steve Jobs</p>
+                </div>
+            </div>
+
+            <div class="todolist-container">
+                <h2>TO DO List</h2>
+                <hr />
+                <div class="link-container">
+                    <a href="https://to-do-list-kappa-beige.vercel.app/" target="_blank">Open To-Do List</a>
+                </div>
+            </div>
+        </div>
+        </div>
+
         <audio id="beep-sound" src="start-bell.wav" preload="auto"></audio>
-<!--
-        <div id="break-container">
-            <h2>Time's Up!</h2>
-            <h3>Take a break?</h3>
-            <hr />
-            <button id="yes-btn">Yes!</button>
-            <button id="no-btn">No, thanks.</button>
-        </div>
-    -->
-
-        <div class="quote-container">
-            <button id="reset">🗘</button>
-            <h2>Quote OTD</h2>
-            
-            <hr />
-            <div class="quote">
-                <p id="quote-text">"The only way to do great work is to love what you do." - Steve Jobs</p>
-            </div>
-        </div>
-
-        <div class="todolist-container">
-            <h2>TO DO List</h2>
-            <hr />
-            <div class="link-container">
-                <a href="https://to-do-list-kappa-beige.vercel.app/" target="_blank">Open To-Do List</a>
-            </div>
-        </div>
 
         <div class="popup-overlay" id="popup">
             <div class="popup-box">

@@ -42,17 +42,19 @@ const appTimer = () => {
     bells.play();
     isRunning = false;
 
-    // Show focus container
-    const focusContainer = document.getElementById('focus-container');
-    focusContainer.innerHTML = `
-      <h2>Time's Up!</h2>
-      <h3>Ready to Go Back to Focus?</h3>
-      <hr />
-      <button id="yes-focus"><a href="index.html">Yes!</a></button>
-      <button id="no-focus"><a href="break.html">No, thanks.</a></button>
-    `;
-    focusContainer.style.opacity = "1";
-    focusContainer.querySelector(".inner-content").style.opacity = "1";
+    // show popup to take a break
+    const popup =  document.getElementById('popup');
+    popup.classList.add('active'); 
+
+    document.getElementById('yes-btn').addEventListener('click', () => {
+      window.location.href = 'index.html'; // link to focus page
+    });
+    document.getElementById('no-btn').addEventListener('click', () => {
+      popup.classList.remove('active');
+      minuteDiv.textContent = '1';
+      secondDiv.textContent = '00';
+      totalSeconds = undefined; // reset for next start
+    });
 
     return;
   }

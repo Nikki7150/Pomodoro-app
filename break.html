@@ -36,13 +36,16 @@
 
         <audio id="beep-sound" src="start-bell.wav" preload="auto"></audio>
 
-        <div id="focus-container">
-            <div class="inner-content">
+
+        <div class="popup-overlay" id="popup">
+            <div class="popup-box">
                 <h2>Time's Up!</h2>
                 <h3>Ready to Go Back to Focus?</h3>
                 <hr />
-                <button id="yes-focus"><a href="index.html">Yes!</a></button>
-                <button id="no-focus"><a href="break.html">No, thanks.</a></button>
+                <div class="popup-buttons">
+                    <button id="yes-btn">Yes!</button>
+                    <button id="no-btn">No, thanks.</button>
+                </div>
             </div>
         </div>
 
